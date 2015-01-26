@@ -8,20 +8,16 @@ end
 
 puts array.inspect
 
-array.each do |nums|
-  if nums % 2 == 0
-	puts nums
-	break
-  end
-end
-
 def first_even_number(nums)
-  if nums % 2 == 0
-	puts nums
+  nums.select do |num|
+    if num % 2 == 0
+	   puts num
+	break
+    end
   end
 end
 
-
+first_even_number(array)
 
 
 
